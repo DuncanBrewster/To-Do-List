@@ -1,0 +1,168 @@
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu';
+    background-image: linear-gradient(120deg, #276792da, #71b0d4);
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header, 
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, 
+form button {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #276792da;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #276792da;
+    color: white;
+}
+
+form input {
+    width: 300px ;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo {
+    margin: 1rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .complete-btn{
+    background: #276792da;
+    color: white;
+    border-top: none;
+    border-bottom: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    border-right: none;
+    border-left: none;
+}
+
+.trash-btn {
+    border-left-color: #71b0d4;
+    border-right: none;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+/*Make icons unable to be clicked - so whole button can be clicked*/
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/*Delete Animation*/
+.fade {
+    animation: fade-animation .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+}
+
+@keyframes fade-animation {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+ 
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+}
+/*End Delete Animation*/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+
+}
+
+.select {
+    margin: 1rem;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #276792da;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #276792da;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: #276792da;
+}
