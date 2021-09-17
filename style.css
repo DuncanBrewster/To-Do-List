@@ -45,7 +45,9 @@ form button:hover {
 }
 
 form input {
-    width: 18.75% ;
+    width: 18.75%;
+    min-width: 18.75%;
+    border-radius: 0rem;
 }
 
 .todo-container {
@@ -56,7 +58,7 @@ form input {
 
 .todo-list {
     list-style: none;
-    min-width: 30%;
+    min-width: 5%;
 }
 
 .todo {
