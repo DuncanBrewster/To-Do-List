@@ -174,8 +174,8 @@ select {
 
 @media(max-width: 1300px) {
     .trash-btn, .complete-btn{
-        background: white;
-        color: #276792da;
+        background: #276792da;
+        color: white;
         border-top: none;
         border-bottom: none;
         padding: 1rem;
@@ -185,8 +185,8 @@ select {
 
     select {
         color: white;
-        width: 5rem;
-        min-width: 3rem;
+        width: 10rem;
+        min-width: 10rem;
         cursor: pointer;
         padding: 1rem;
     }
