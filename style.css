@@ -172,7 +172,7 @@ select {
 
 /*MEDIA QUERIES*/
 
-@media(max-width: 900px) {
+@media(max-width: 1300px) {
     .trash-btn, .complete-btn{
         background: white;
         color: #276792da;
