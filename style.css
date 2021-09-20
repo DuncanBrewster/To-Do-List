@@ -149,6 +149,7 @@ select {
 
 select {
     color: #276792da;
+    background-color: white;
     width: 10rem;
     min-width: none;
     cursor: pointer;
@@ -177,5 +178,12 @@ select {
 
 
 @media(max-width: 900px) {
-/*FIT INPUT BOX ON PHONE SCREEN. CHANGE COLOR OF SELECT BOX. MAKE IT SHRINK TOO, IDK HOW INPUT BOX SHRINKS BUT SELECT BOX DOES NOT*/
+    select {
+        color: #276792da;
+        background-color: white;
+        width: 7rem;
+        min-width: none;
+        cursor: pointer;
+        padding: 1rem;
+    }
 }
