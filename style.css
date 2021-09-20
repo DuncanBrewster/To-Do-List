@@ -178,10 +178,17 @@ select {
 
 
 @media(max-width: 900px) {
+
+    form input {
+        width: 30%;
+        border-radius: 0rem;
+    }
+
     select {
         color: #276792da;
         background-color: white;
-        width: 7rem;
+        width: 8rem;
+        border-radius: none;
         min-width: none;
         cursor: pointer;
         padding: 1rem;
