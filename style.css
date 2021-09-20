@@ -137,6 +137,7 @@ select {
     appearance: none;
     outline: none;
     border: none;
+    border-radius: none;
 
 }
 
@@ -145,6 +146,7 @@ select {
     font-size: 1rem;
     position: relative;
     overflow: hidden;
+    border: none;
 }
 
 select {
@@ -154,6 +156,7 @@ select {
     min-width: none;
     cursor: pointer;
     padding: 1rem;
+    border-radius: none;
 }
 
 .select::after {
@@ -194,4 +197,13 @@ select {
         cursor: pointer;
         padding: 1rem;
     }
+}
+
+@media (max-width: 1200px) {
+    form input {
+        width: 40%;
+        border-radius: none;
+        margin-left: 1rem;
+    }
+
 }
