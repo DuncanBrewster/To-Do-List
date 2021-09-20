@@ -46,7 +46,7 @@ form button:hover {
 
 form input {
     width: 20%;
-    border-radius: 0rem;
+    border-radius: none;
 }
 
 .todo-container {
@@ -178,16 +178,16 @@ select {
 
 
 
-@media(max-width: 1300px) {
+@media(max-width: 900px) {
 
     form input {
         width: 50%;
-        border-radius: 0rem;
+        border-radius: none;
     }
 
     select {
         color: #276792da;
-        background-color: white;
+        background-color: black;
         width: 8rem;
         border-radius: none;
         min-width: none;
