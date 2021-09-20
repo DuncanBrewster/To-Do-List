@@ -177,7 +177,7 @@ select {
 
 
 
-@media(max-width: 1500px) {
+@media(orientation: portrait) {
 
     form input {
         width: 40%;
