@@ -178,11 +178,12 @@ select {
 
 
 
-@media(max-width: 1900px) {
+@media(max-width: 1500px) {
 
     form input {
-        width: 50%;
+        width: 40%;
         border-radius: none;
+        margin: 1rem;
     }
 
     select {
