@@ -22,6 +22,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: none;
 }
 
 form input, 
@@ -137,8 +138,6 @@ select {
     appearance: none;
     outline: none;
     border: none;
-    border-radius: none;
-
 }
 
 .select {
@@ -156,7 +155,6 @@ select {
     min-width: none;
     cursor: pointer;
     padding: 1rem;
-    border-radius: none;
 }
 
 .select::after {
