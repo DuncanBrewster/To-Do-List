@@ -137,6 +137,7 @@ select {
     appearance: none;
     outline: none;
     border: none;
+    border-radius: none;
 
 }
 
@@ -180,7 +181,7 @@ select {
 @media(max-width: 900px) {
 
     form input {
-        width: 30%;
+        width: 50%;
         border-radius: 0rem;
     }
 
