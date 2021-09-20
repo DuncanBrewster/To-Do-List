@@ -137,7 +137,6 @@ select {
     appearance: none;
     outline: none;
     border: none;
-    border-radius: none;
 
 }
 
@@ -183,12 +182,12 @@ select {
     form input {
         width: 40%;
         border-radius: none;
-        margin: 1rem;
+        margin-left: 1rem;
     }
 
     select {
         color: #276792da;
-        background-color: black;
+        background-color: white;
         width: 8rem;
         border-radius: none;
         min-width: none;
