@@ -45,7 +45,7 @@ form button:hover {
 }
 
 form input {
-    width: 18.75%;
+    width: 20%;
     border-radius: 0rem;
 }
 
@@ -57,7 +57,7 @@ form input {
 
 .todo-list {
     list-style: none;
-    min-width: 5%;
+    min-width: 13%;
 }
 
 .todo {
@@ -73,6 +73,8 @@ form input {
 
 .todo li {
     flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .trash-btn, .complete-btn{
@@ -99,7 +101,7 @@ form input {
     padding: 0rem 0.5rem;
 }
 
-/*Make icons unable to be clicked - so whole button can be clicked*/
+/*Makes icons unable to be clicked - so whole button can be clicked*/
 .fa-trash,
 .fa-check {
     pointer-events: none;
@@ -148,7 +150,7 @@ select {
 select {
     color: #276792da;
     width: 10rem;
-    min-width: 3rem;
+    min-width: none;
     cursor: pointer;
     padding: 1rem;
 }
@@ -171,7 +173,9 @@ select {
 
 
 /*MEDIA QUERIES*/
-/*
-@media(max-width: 1300px) {
 
-}*/
+
+
+@media(max-width: 900px) {
+/*FIT INPUT BOX ON PHONE SCREEN. CHANGE COLOR OF SELECT BOX. MAKE IT SHRINK TOO, IDK HOW INPUT BOX SHRINKS BUT SELECT BOX DOES NOT*/
+}
