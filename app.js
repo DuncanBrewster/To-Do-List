@@ -43,6 +43,19 @@ function addTodo(event) {
     //Clear Todo Input Value
     todoInput.value = "";
 
+    //Save to Local Storage
+    const saveLocalTodos = () => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+    };
+    const getLocalTodos = () => {
+        if(localStorage.getItem("todos") ===null) {
+        localStorage.setItem("todos", JSON.stringify([]));
+        } else {
+        let todoLocal = JSON.parse(localStorage.getItem("todos"));
+        setTodos(todoLocal);
+        }
+    };
+
 }
 
 function deleteCheck(e){
